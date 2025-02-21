@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffcccb; /* Light pink background */
+    font-family: 'Pacifico', cursive; /* Playful font */
+}
+
+.container {
+    text-align: center;
+}
+
+.heart {
+    font-size: 100px;
+    cursor: pointer;
+    animation: beat 1s infinite;
+}
+
+@keyframes beat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.message {
+    font-size: 40px;
+    color: #ff1493; /* Deep pink color */
+    display: none; /* Hidden by default */
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+    background-color: #ff1493; /* Deep pink button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff69b4; /* Lighter pink on hover */
+}
